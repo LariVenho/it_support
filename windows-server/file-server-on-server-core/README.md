@@ -58,4 +58,3 @@ Result: teachers can read and write and students can only read, as required.
 - A shared folder has two permission layers: the share permissions (`New-SmbShare`) and the NTFS permissions (`icacls`). The effective permission is the more restrictive of the two, so both should be set to match each other.
 - Permissions are given to groups instead of single users. A user gets the rights of the groups they belong to, so access is changed by changing group membership.
 - Permissions have to be tested by signing in as a user of each group, because the same folder behaves differently for different users.
-- The optional extra tasks of the exercise (subfolders with their own permissions, disk quota, automation script) were not done in this project.
