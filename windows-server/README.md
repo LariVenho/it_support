@@ -12,3 +12,4 @@ Windows Server 2022, Active Directory, Group Policy and IIS exercises, including
 - [Removing power commands from the Start menu](start-menu-power-options-gpo/README.md): a GPO that removes the power commands from the Start menu of domain clients, with before and after screenshots.
 - [Shared folder and drive mapping with Group Policy](shared-folder-drive-map-gpo/README.md): a shared folder with restricted permissions that is mapped as a network drive for domain users with a GPO.
 - [Intranet on a Windows Server 2022 server](iis-intranet-server/README.md): installing IIS on a domain member server and publishing an intranet front page.
+- [Backup and restore](backup-and-restore/README.md): a full server backup of a domain controller to a new disk and a System State restore in Directory Services Restore Mode after SYSVOL was damaged.
