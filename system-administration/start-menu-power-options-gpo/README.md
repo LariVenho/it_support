@@ -36,10 +36,3 @@ It does not prevent programs from performing these functions. As the "after" scr
 5. Open **Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands**, select **Enabled** and select **OK**.
 6. On the client, run `gpupdate /force` in a command prompt and restart the client or sign out and back in.
 7. Open the Start menu on the client and check the power button (see the screenshots above).
-
-## Removing only Sleep and Hibernate
-
-If only Sleep and Hibernate should be removed and Shut down and Restart must stay available, use these two separate settings instead:
-
-- **Computer Configuration > Policies > Administrative Templates > Windows Components > File Explorer > Show sleep in the power options menu:** set to **Disabled**
-- **Computer Configuration > Policies > Administrative Templates > Windows Components > File Explorer > Show hibernate in the power options menu:** set to **Disabled**
