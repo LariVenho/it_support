@@ -32,7 +32,7 @@ Set a static IPv4 address in the adapter properties (**Internet Protocol Version
 |---|---|
 | IP address | 172.16.10.100 |
 | Subnet mask | 255.255.255.0 |
-| Preferred DNS server | 172.16.10.10 (the real IP address of the server) |
+| Preferred DNS server | 172.16.10.10 (example: the IP address of your own server) |
 
 The server works as the DNS server of the domain, so it must be the only DNS server. No external DNS servers are configured. Use the values that match your own server and network.
 
