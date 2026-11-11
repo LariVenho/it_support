@@ -19,3 +19,4 @@ Windows Server 2022, Active Directory, Group Policy and IIS exercises, including
 - [Blocking network traffic with a firewall rule in Group Policy](firewall-block-subnet-gpo/README.md): an outbound Windows Defender Firewall rule that blocks traffic to a subnet, tested on a Windows 11 client.
 - [Creating a Group Policy report with PowerShell](gpo-report/README.md): exporting all GPOs of the domain to an HTML report with Get-GPOReport.
 - [DNS reverse lookup zone and DHCP server](dhcp-and-reverse-lookup-zone/README.md): a reverse lookup zone, the DHCP server role and a scope that gives addresses to a Windows 11 client.
+- [Remote Server Administration Tools on Windows 11](rsat-on-windows-11/README.md): installing RSAT (AD DS, File Services, Group Policy Management and Server Manager tools) on a workstation and resetting a domain user's password from it.
