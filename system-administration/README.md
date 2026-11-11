@@ -12,3 +12,4 @@ Server and system administration exercises and documentation.
 - [Installing Firefox on clients with Group Policy](firefox-software-deployment-gpo/README.md): assigning an MSI package to the computers in a dedicated OU and testing it on a domain client.
 - [Removing power commands from the Start menu](start-menu-power-options-gpo/README.md): a GPO that removes the power commands from the Start menu of domain clients, with before and after screenshots.
 - [Shared folder and drive mapping with Group Policy](shared-folder-drive-map-gpo/README.md): a shared folder with restricted permissions that is mapped as a network drive for domain users with a GPO.
+- [Linux Mint and Zorin OS in a virtual machine](linux-mint-and-zorin-os/README.md): installing two Linux distributions, comparing them and enabling the Simple System Monitor desklet on Linux Mint.
