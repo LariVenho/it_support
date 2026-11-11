@@ -17,3 +17,4 @@ Windows Server 2022, Active Directory, Group Policy and IIS exercises, including
 - [Preventing application installation with Group Policy](prohibit-user-installs-gpo/README.md): the Windows Installer policy Prohibit User Installs, enabled with Hide User Installs.
 - [Blocking USB storage devices with Group Policy](block-usb-storage-gpo/README.md): denying all access to removable storage classes for domain users, while keyboards and mice keep working.
 - [Blocking network traffic with a firewall rule in Group Policy](firewall-block-subnet-gpo/README.md): an outbound Windows Defender Firewall rule that blocks traffic to a subnet, tested on a Windows 11 client.
+- [Creating a Group Policy report with PowerShell](gpo-report/README.md): exporting all GPOs of the domain to an HTML report with Get-GPOReport.
