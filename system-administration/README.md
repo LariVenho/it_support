@@ -10,3 +10,4 @@ Server and system administration exercises and documentation.
 - [Domain password and account lockout policy](password-and-lockout-policy/README.md): password history, age, length and complexity, and account lockout settings in the Default Domain Policy.
 - [Desktop wallpaper Group Policy](desktop-wallpaper-gpo/README.md): a GPO that sets a common wallpaper from a network share, tested on a domain client.
 - [Installing Firefox on clients with Group Policy](firefox-software-deployment-gpo/README.md): assigning an MSI package to the computers in a dedicated OU and testing it on a domain client.
+- [Removing power commands from the Start menu](start-menu-power-options-gpo/README.md): a GPO that removes the power commands from the Start menu of domain clients, with before and after screenshots.
