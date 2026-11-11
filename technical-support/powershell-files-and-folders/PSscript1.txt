@@ -1,0 +1,1005 @@
+**********************
+Windows PowerShell transcript start
+Start time: 20260915091122
+Username: Windows\admin
+RunAs User: Windows\admin
+Configuration Name: 
+Machine: WINDOWS (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 5388
+PSVersion: 5.1.26100.9444
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9444
+BuildVersion: 10.0.26100.9444
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is C:\Users\admin\demo3\PSscript1.txt
+PS C:\> get-alias cd
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           cd -> Set-Location
+
+
+PS C:\> get-alias md
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           md -> mkdir
+
+
+PS C:\> Get-Help new-iten
+PS C:\> TerminatingError(): "The pipeline has been stopped."
+PS C:\> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+PS C:\> Get-Help new-item
+
+NAME
+    New-Item
+
+SYNTAX
+    New-Item [-Path] <string[]> [-ItemType <string>] [-Value <Object>] [-Force] [-Credential <pscredential>]
+    [-WhatIf] [-Confirm] [-UseTransaction]  [<CommonParameters>]
+
+    New-Item [[-Path] <string[]>] -Name <string> [-ItemType <string>] [-Value <Object>] [-Force]
+    [-Credential <pscredential>] [-WhatIf] [-Confirm] [-UseTransaction]  [<CommonParameters>]
+
+
+ALIASES
+    ni
+
+
+REMARKS
+    Get-Help cannot find the Help files for this cmdlet on this computer. It is displaying only partial help.
+        -- To download and install Help files for the module that includes this cmdlet, use Update-Help.
+        -- To view the Help topic for this cmdlet online, type: "Get-Help New-Item -Online" or
+           go to https://go.microsoft.com/fwlink/?LinkID=113353.
+
+
+
+PS C:\> New-Item -ItemType directory -Name scripts
+
+
+    Directory: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:13 AM                scripts
+
+
+PS C:\> cd users
+PS C:\users> cd admin
+PS C:\users\admin> ls
+
+
+    Directory: C:\users\admin
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---         9/11/2026   1:29 PM                Contacts
+d-----         9/15/2026   9:11 AM                demo3
+d-r---         9/11/2026   1:29 PM                Desktop
+d-r---         9/11/2026   1:29 PM                Documents
+d-r---         9/11/2026   1:29 PM                Downloads
+d-r---         9/11/2026   1:29 PM                Favorites
+d-r---         9/11/2026   1:29 PM                Links
+d-r---         9/11/2026   1:29 PM                Music
+d-r---         9/15/2026   9:06 AM                OneDrive
+d-r---         9/11/2026   1:29 PM                Pictures
+d-r---         9/11/2026   1:29 PM                Saved Games
+d-r---         9/15/2026   9:04 AM                Searches
+d-r---         9/15/2026   9:04 AM                Videos
+
+
+PS C:\users\admin> New-Item -ItemType directory -Name scripts
+
+
+    Directory: C:\users\admin
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:13 AM                scripts
+
+
+PS C:\users\admin> ls
+
+
+    Directory: C:\users\admin
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---         9/11/2026   1:29 PM                Contacts
+d-----         9/15/2026   9:11 AM                demo3
+d-r---         9/11/2026   1:29 PM                Desktop
+d-r---         9/11/2026   1:29 PM                Documents
+d-r---         9/11/2026   1:29 PM                Downloads
+d-r---         9/11/2026   1:29 PM                Favorites
+d-r---         9/11/2026   1:29 PM                Links
+d-r---         9/11/2026   1:29 PM                Music
+d-r---         9/15/2026   9:06 AM                OneDrive
+d-r---         9/11/2026   1:29 PM                Pictures
+d-r---         9/11/2026   1:29 PM                Saved Games
+d-----         9/15/2026   9:13 AM                scripts
+d-r---         9/15/2026   9:04 AM                Searches
+d-r---         9/15/2026   9:04 AM                Videos
+
+
+PS C:\users\admin> Set-Location \scripts\
+PS C:\scripts> get-alias dir
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           dir -> Get-ChildItem
+
+
+PS C:\scripts> get-help-Get-ChildItem
+get-help-Get-ChildItem : The term 'get-help-Get-ChildItem' is not recognized as the name of a cmdlet, function, script 
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+and try again.
+At line:1 char:1
++ get-help-Get-ChildItem
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get-help-Get-ChildItem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+get-help-Get-ChildItem : The term 'get-help-Get-ChildItem' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or if a path was included,
+verify that the path is correct and try again.
+At line:1 char:1
++ get-help-Get-ChildItem
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get-help-Get-ChildItem:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\scripts> get-help Get-ChildItem
+
+NAME
+    Get-ChildItem
+
+SYNTAX
+    Get-ChildItem [[-Path] <string[]>] [[-Filter] <string>] [-Include <string[]>] [-Exclude <string[]>]
+    [-Recurse] [-Depth <uint32>] [-Force] [-Name] [-UseTransaction] [-Attributes {ReadOnly | Hidden | System
+    | Directory | Archive | Device | Normal | Temporary | SparseFile | ReparsePoint | Compressed | Offline |
+    NotContentIndexed | Encrypted | IntegrityStream | NoScrubData}] [-FollowSymlink] [-Directory] [-File]
+    [-Hidden] [-ReadOnly] [-System]  [<CommonParameters>]
+
+    Get-ChildItem [[-Filter] <string>] -LiteralPath <string[]> [-Include <string[]>] [-Exclude <string[]>]
+    [-Recurse] [-Depth <uint32>] [-Force] [-Name] [-UseTransaction] [-Attributes {ReadOnly | Hidden | System
+    | Directory | Archive | Device | Normal | Temporary | SparseFile | ReparsePoint | Compressed | Offline |
+    NotContentIndexed | Encrypted | IntegrityStream | NoScrubData}] [-FollowSymlink] [-Directory] [-File]
+    [-Hidden] [-ReadOnly] [-System]  [<CommonParameters>]
+
+
+ALIASES
+    gci
+    ls
+    dir
+
+
+REMARKS
+    Get-Help cannot find the Help files for this cmdlet on this computer. It is displaying only partial help.
+        -- To download and install Help files for the module that includes this cmdlet, use Update-Help.
+        -- To view the Help topic for this cmdlet online, type: "Get-Help Get-ChildItem -Online" or
+           go to https://go.microsoft.com/fwlink/?LinkID=113308.
+
+
+
+PS C:\scripts> dir
+PS C:\scripts> New-Item -Path C:\Users\Admin\scripts\demo -ItemType directory -Name scripts
+
+
+    Directory: C:\Users\Admin\scripts\demo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:16 AM                scripts
+
+
+PS C:\scripts> set-location .\demo\
+set-location : Cannot find path 'C:\scripts\demo\' because it does not exist.
+At line:1 char:1
++ set-location .\demo\
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\scripts\demo\:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+set-location : Cannot find path 'C:\scripts\demo\' because it does not exist.
+At line:1 char:1
++ set-location .\demo\
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\scripts\demo\:String) [Set-Location], ItemNotFoundExceptio
+   n
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\scripts> cd..
+PS C:\> set-location .\demo\
+set-location : Cannot find path 'C:\demo\' because it does not exist.
+At line:1 char:1
++ set-location .\demo\
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\demo\:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+set-location : Cannot find path 'C:\demo\' because it does not exist.
+At line:1 char:1
++ set-location .\demo\
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\demo\:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\> cd scripts
+PS C:\scripts> New-Item -ItemType directory -Name demo
+
+
+    Directory: C:\scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:18 AM                demo
+
+
+PS C:\scripts> Get-ChildItem
+
+
+    Directory: C:\scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:18 AM                demo
+
+
+PS C:\scripts> set-location .\demo\
+PS C:\scripts\demo> Get-ChildItem
+PS C:\scripts\demo> dir
+PS C:\scripts\demo> get-item
+
+
+    Directory: C:\scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:18 AM                demo
+
+
+PS C:\scripts\demo> echo "This is my file" > myfile.txt
+>> ParameterBinding(Out-File): name="InputObject"; value="This is my file"
+PS C:\scripts\demo> get-alias cat
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           cat -> Get-Content
+
+
+PS C:\scripts\demo> get-alis type
+get-alis : The term 'get-alis' is not recognized as the name of a cmdlet, function, script file, or operable program. 
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ get-alis type
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get-alis:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+get-alis : The term 'get-alis' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try
+again.
+At line:1 char:1
++ get-alis type
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (get-alis:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\scripts\demo> get-alias type
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           type -> Get-Content
+
+
+PS C:\scripts\demo> Get-Content myfile.txt
+This is my file
+PS C:\scripts\demo> echo "This is my another file" > myfile2.txt
+>> ParameterBinding(Out-File): name="InputObject"; value="This is my another file"
+PS C:\scripts\demo> Write-Output "This is my third file." | Out-File myfile3.txt
+PS C:\scripts\demo> Get-ChildItem
+
+
+    Directory: C:\scripts\demo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         9/15/2026   9:19 AM             36 myfile.txt
+-a----         9/15/2026   9:20 AM             52 myfile2.txt
+-a----         9/15/2026   9:21 AM             50 myfile3.txt
+
+
+PS C:\scripts\demo> New-Item -ItemType Directory -Name "New Folder"
+
+
+    Directory: C:\scripts\demo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:22 AM                New Folder
+
+
+PS C:\scripts\demo> Copy-Item myfile.txt ´.\New-Folder\
+>> TerminatingError(Copy-Item): "Could not find a part of the path 'C:\scripts\demo\´.\New-Folder\'."
+Copy-Item : Could not find a part of the path 'C:\scripts\demo\´.\New-Folder\'.
+At line:1 char:1
++ Copy-Item myfile.txt ´.\New-Folder\
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Copy-Item], DirectoryNotFoundException
+    + FullyQualifiedErrorId : System.IO.DirectoryNotFoundException,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Could not find a part of the path 'C:\scripts\demo\´.\New-Folder\'.
+At line:1 char:1
++ Copy-Item myfile.txt ´.\New-Folder\
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Copy-Item], DirectoryNotFoundException
+    + FullyQualifiedErrorId : System.IO.DirectoryNotFoundException,Microsoft.PowerShell.Commands.CopyItemCom
+   mand
+
+PS C:\scripts\demo> Copy-Item myfile.txt ´.\New Folder\´
+>> TerminatingError(Copy-Item): "A positional parameter cannot be found that accepts argument 'Folder\´'."
+Copy-Item : A positional parameter cannot be found that accepts argument 'Folder\´'.
+At line:1 char:1
++ Copy-Item myfile.txt ´.\New Folder\´
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Copy-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : A positional parameter cannot be found that accepts argument 'Folder\´'.
+At line:1 char:1
++ Copy-Item myfile.txt ´.\New Folder\´
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Copy-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+PS C:\scripts\demo> Copy-Item myfile.txt ".\New Folder\"
+PS C:\scripts\demo> ls
+
+
+    Directory: C:\scripts\demo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:22 AM                New Folder
+-a----         9/15/2026   9:19 AM             36 myfile.txt
+-a----         9/15/2026   9:20 AM             52 myfile2.txt
+-a----         9/15/2026   9:21 AM             50 myfile3.txt
+
+
+PS C:\scripts\demo> cd New Folder
+>> TerminatingError(Set-Location): "A positional parameter cannot be found that accepts argument 'Folder'."
+Set-Location : A positional parameter cannot be found that accepts argument 'Folder'.
+At line:1 char:1
++ cd New Folder
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+Set-Location : A positional parameter cannot be found that accepts argument 'Folder'.
+At line:1 char:1
++ cd New Folder
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\scripts\demo> cd "New Folder"
+PS C:\scripts\demo\New Folder> ls
+
+
+    Directory: C:\scripts\demo\New Folder
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         9/15/2026   9:19 AM             36 myfile.txt
+
+
+PS C:\scripts\demo\New Folder> cd ..
+PS C:\scripts\demo> Get-ChildItem ".\New Folder\"
+
+
+    Directory: C:\scripts\demo\New Folder
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         9/15/2026   9:19 AM             36 myfile.txt
+
+
+PS C:\scripts\demo> notepad myscript.ps1
+PS C:\scripts\demo> ls
+
+
+    Directory: C:\scripts\demo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:24 AM                New Folder
+-a----         9/15/2026   9:19 AM             36 myfile.txt
+-a----         9/15/2026   9:20 AM             52 myfile2.txt
+-a----         9/15/2026   9:21 AM             50 myfile3.txt
+-a----         9/15/2026   9:29 AM            446 myscript.ps1
+
+
+PS C:\scripts\demo> myscript.ps1
+myscript.ps1 : The term 'myscript.ps1' is not recognized as the name of a cmdlet, function, script file, or operable 
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ myscript.ps1
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (myscript.ps1:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+myscript.ps1 : The term 'myscript.ps1' is not recognized as the name of a cmdlet, function, script file, or
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct
+and try again.
+At line:1 char:1
++ myscript.ps1
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (myscript.ps1:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\scripts\demo> .\myscript.ps1
+.\myscript.ps1 : File C:\scripts\demo\myscript.ps1 cannot be loaded because running scripts is disabled on this system. 
+For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ .\myscript.ps1
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+.\myscript.ps1 : File C:\scripts\demo\myscript.ps1 cannot be loaded because running scripts is disabled on
+this system. For more information, see about_Execution_Policies at
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ .\myscript.ps1
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+PS C:\scripts\demo> Set-ExecutionPolicy bypass
+PS C:\scripts\demo> .\myscript.ps1
+This is my first Powershell script myscript.ps1
+Create a new folder and some new files there.
+
+
+    Directory: C:\scripts\demo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:31 AM                My Folder
+
+
+    Directory: C:\scripts\demo\My Folder
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         9/15/2026   9:31 AM             56 newfile1.txt
+-a----         9/15/2026   9:31 AM             78 newfile2.txt
+-a----         9/15/2026   9:31 AM             50 newfile3.txt
+
+
+PS C:\scripts\demo\My Folder> Set-ExecutionPolicy Restricted
+PS C:\scripts\demo\My Folder> Get-Content '.\My Folder\newfile.txt'
+Get-Content : Cannot find path 'C:\scripts\demo\My Folder\My Folder\newfile.txt' because it does not exist.
+At line:1 char:1
++ Get-Content '.\My Folder\newfile.txt'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\scripts\demo...der\newfile.txt:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'C:\scripts\demo\My Folder\My Folder\newfile.txt' because it does not exist.
+At line:1 char:1
++ Get-Content '.\My Folder\newfile.txt'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\scripts\demo...der\newfile.txt:String) [Get-Content], Item
+   NotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+
+PS C:\scripts\demo\My Folder> cd ..
+PS C:\scripts\demo> Get-Content '.\My Folder\newfile.txt'
+Get-Content : Cannot find path 'C:\scripts\demo\My Folder\newfile.txt' because it does not exist.
+At line:1 char:1
++ Get-Content '.\My Folder\newfile.txt'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\scripts\demo\My Folder\newfile.txt:String) [Get-Content], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+Get-Content : Cannot find path 'C:\scripts\demo\My Folder\newfile.txt' because it does not exist.
+At line:1 char:1
++ Get-Content '.\My Folder\newfile.txt'
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\scripts\demo\My Folder\newfile.txt:String) [Get-Content],
+   ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.GetContentCommand
+
+PS C:\scripts\demo> Get-Content '.\My Folder\newfile1.txt'
+This is my first new file
+PS C:\scripts\demo> Get-Help copy.item
+Get-Help : Get-Help could not find copy.item in a help file in this session. To download updated help topics type: 
+"Update-Help". To get help online, search for the help topic in the TechNet library at 
+https:/go.microsoft.com/fwlink/?LinkID=107116.
+At line:1 char:1
++ Get-Help copy.item
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [Get-Help], HelpNotFoundException
+    + FullyQualifiedErrorId : HelpNotFound,Microsoft.PowerShell.Commands.GetHelpCommand
+Get-Help : Get-Help could not find copy.item in a help file in this session. To download updated help topics
+type: "Update-Help". To get help online, search for the help topic in the TechNet library at
+https:/go.microsoft.com/fwlink/?LinkID=107116.
+At line:1 char:1
++ Get-Help copy.item
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ResourceUnavailable: (:) [Get-Help], HelpNotFoundException
+    + FullyQualifiedErrorId : HelpNotFound,Microsoft.PowerShell.Commands.GetHelpCommand
+
+PS C:\scripts\demo> Get-Help copy-item
+
+NAME
+    Copy-Item
+
+SYNTAX
+    Copy-Item [-Path] <string[]> [[-Destination] <string>] [-Container] [-Force] [-Filter <string>]
+    [-Include <string[]>] [-Exclude <string[]>] [-Recurse] [-PassThru] [-Credential <pscredential>]
+    [-WhatIf] [-Confirm] [-UseTransaction] [-FromSession <PSSession>] [-ToSession <PSSession>]
+    [<CommonParameters>]
+
+    Copy-Item [[-Destination] <string>] -LiteralPath <string[]> [-Container] [-Force] [-Filter <string>]
+    [-Include <string[]>] [-Exclude <string[]>] [-Recurse] [-PassThru] [-Credential <pscredential>]
+    [-WhatIf] [-Confirm] [-UseTransaction] [-FromSession <PSSession>] [-ToSession <PSSession>]
+    [<CommonParameters>]
+
+
+ALIASES
+    cpi
+    cp
+    copy
+
+
+REMARKS
+    Get-Help cannot find the Help files for this cmdlet on this computer. It is displaying only partial help.
+        -- To download and install Help files for the module that includes this cmdlet, use Update-Help.
+        -- To view the Help topic for this cmdlet online, type: "Get-Help Copy-Item -Online" or
+           go to https://go.microsoft.com/fwlink/?LinkID=113292.
+
+
+
+PS C:\scripts\demo> Copy-Item '.\My Folder\newfile.txt' newfile3_copy.txt
+Copy-Item : Cannot find path 'C:\scripts\demo\My Folder\newfile.txt' because it does not exist.
+At line:1 char:1
++ Copy-Item '.\My Folder\newfile.txt' newfile3_copy.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\scripts\demo\My Folder\newfile.txt:String) [Copy-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+Copy-Item : Cannot find path 'C:\scripts\demo\My Folder\newfile.txt' because it does not exist.
+At line:1 char:1
++ Copy-Item '.\My Folder\newfile.txt' newfile3_copy.txt
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\scripts\demo\My Folder\newfile.txt:String) [Copy-Item], It
+   emNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.CopyItemCommand
+
+PS C:\scripts\demo> Copy-Item '.\My Folder\newfile3.txt' newfile3_copy.txt
+PS C:\scripts\demo> Get-ChildItem
+
+
+    Directory: C:\scripts\demo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:31 AM                My Folder
+d-----         9/15/2026   9:24 AM                New Folder
+-a----         9/15/2026   9:19 AM             36 myfile.txt
+-a----         9/15/2026   9:20 AM             52 myfile2.txt
+-a----         9/15/2026   9:21 AM             50 myfile3.txt
+-a----         9/15/2026   9:29 AM            446 myscript.ps1
+-a----         9/15/2026   9:31 AM             50 newfile3_copy.txt
+
+
+PS C:\scripts\demo> dir
+
+
+    Directory: C:\scripts\demo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:31 AM                My Folder
+d-----         9/15/2026   9:24 AM                New Folder
+-a----         9/15/2026   9:19 AM             36 myfile.txt
+-a----         9/15/2026   9:20 AM             52 myfile2.txt
+-a----         9/15/2026   9:21 AM             50 myfile3.txt
+-a----         9/15/2026   9:29 AM            446 myscript.ps1
+-a----         9/15/2026   9:31 AM             50 newfile3_copy.txt
+
+
+PS C:\scripts\demo> md ..\demo2
+
+
+    Directory: C:\scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:36 AM                demo2
+
+
+PS C:\scripts\demo> dir
+
+
+    Directory: C:\scripts\demo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:31 AM                My Folder
+d-----         9/15/2026   9:24 AM                New Folder
+-a----         9/15/2026   9:19 AM             36 myfile.txt
+-a----         9/15/2026   9:20 AM             52 myfile2.txt
+-a----         9/15/2026   9:21 AM             50 myfile3.txt
+-a----         9/15/2026   9:29 AM            446 myscript.ps1
+-a----         9/15/2026   9:31 AM             50 newfile3_copy.txt
+
+
+PS C:\scripts\demo> copy-item '.\My Folder\' ..\demo2\ -Recurse
+PS C:\scripts\demo> Get-ChildItem
+
+
+    Directory: C:\scripts\demo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:31 AM                My Folder
+d-----         9/15/2026   9:24 AM                New Folder
+-a----         9/15/2026   9:19 AM             36 myfile.txt
+-a----         9/15/2026   9:20 AM             52 myfile2.txt
+-a----         9/15/2026   9:21 AM             50 myfile3.txt
+-a----         9/15/2026   9:29 AM            446 myscript.ps1
+-a----         9/15/2026   9:31 AM             50 newfile3_copy.txt
+
+
+PS C:\scripts\demo> Get-ChildItem ..\.
+
+
+    Directory: C:\scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:36 AM                demo
+d-----         9/15/2026   9:36 AM                demo2
+
+
+PS C:\scripts\demo> Get-Alias - Definition Get-ChildItem
+>> TerminatingError(Get-Alias): "A positional parameter cannot be found that accepts argument 'Definition'."
+Get-Alias : A positional parameter cannot be found that accepts argument 'Definition'.
+At line:1 char:1
++ Get-Alias - Definition Get-ChildItem
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Alias], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.GetAliasCommand
+Get-Alias : A positional parameter cannot be found that accepts argument 'Definition'.
+At line:1 char:1
++ Get-Alias - Definition Get-ChildItem
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-Alias], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.GetAliasCommand
+
+PS C:\scripts\demo> Get-Alias -Definition Get-ChildItem
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           dir -> Get-ChildItem
+Alias           gci -> Get-ChildItem
+Alias           ls -> Get-ChildItem
+
+
+PS C:\scripts\demo> gci
+
+
+    Directory: C:\scripts\demo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:31 AM                My Folder
+d-----         9/15/2026   9:24 AM                New Folder
+-a----         9/15/2026   9:19 AM             36 myfile.txt
+-a----         9/15/2026   9:20 AM             52 myfile2.txt
+-a----         9/15/2026   9:21 AM             50 myfile3.txt
+-a----         9/15/2026   9:29 AM            446 myscript.ps1
+-a----         9/15/2026   9:31 AM             50 newfile3_copy.txt
+
+
+PS C:\scripts\demo> gci ..
+
+
+    Directory: C:\scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:36 AM                demo
+d-----         9/15/2026   9:36 AM                demo2
+
+
+PS C:\scripts\demo> gci ..\demo2
+
+
+    Directory: C:\scripts\demo2
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:37 AM                My Folder
+
+
+PS C:\scripts\demo> GEt-ChildItem '..\demo2\My Folder'
+
+
+    Directory: C:\scripts\demo2\My Folder
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         9/15/2026   9:31 AM             56 newfile1.txt
+-a----         9/15/2026   9:31 AM             78 newfile2.txt
+-a----         9/15/2026   9:31 AM             50 newfile3.txt
+
+
+PS C:\scripts\demo> GEt-ChildItem '..\demo2\My Folder\'
+
+
+    Directory: C:\scripts\demo2\My Folder
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         9/15/2026   9:31 AM             56 newfile1.txt
+-a----         9/15/2026   9:31 AM             78 newfile2.txt
+-a----         9/15/2026   9:31 AM             50 newfile3.txt
+
+
+PS C:\scripts\demo> Set-Location '..\demo2\My Folder\'
+PS C:\scripts\demo2\My Folder> gci
+
+
+    Directory: C:\scripts\demo2\My Folder
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         9/15/2026   9:31 AM             56 newfile1.txt
+-a----         9/15/2026   9:31 AM             78 newfile2.txt
+-a----         9/15/2026   9:31 AM             50 newfile3.txt
+
+
+PS C:\scripts\demo2\My Folder> Remove-Item * -whatif
+What if: Performing the operation "Remove File" on target "C:\scripts\demo2\My Folder\newfile1.txt".
+What if: Performing the operation "Remove File" on target "C:\scripts\demo2\My Folder\newfile2.txt".
+What if: Performing the operation "Remove File" on target "C:\scripts\demo2\My Folder\newfile3.txt".
+PS C:\scripts\demo2\My Folder> gci
+
+
+    Directory: C:\scripts\demo2\My Folder
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         9/15/2026   9:31 AM             56 newfile1.txt
+-a----         9/15/2026   9:31 AM             78 newfile2.txt
+-a----         9/15/2026   9:31 AM             50 newfile3.txt
+
+
+PS C:\scripts\demo2\My Folder> Set-Location ..
+PS C:\scripts\demo2> Set-Location '..\demo2\My Folder\'
+PS C:\scripts\demo2\My Folder> Set-Location ..\..\demo
+PS C:\scripts\demo> gci
+
+
+    Directory: C:\scripts\demo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:31 AM                My Folder
+d-----         9/15/2026   9:24 AM                New Folder
+-a----         9/15/2026   9:19 AM             36 myfile.txt
+-a----         9/15/2026   9:20 AM             52 myfile2.txt
+-a----         9/15/2026   9:21 AM             50 myfile3.txt
+-a----         9/15/2026   9:29 AM            446 myscript.ps1
+-a----         9/15/2026   9:31 AM             50 newfile3_copy.txt
+
+
+PS C:\scripts\demo> Get-ChildItem '.\My Folder\'
+
+
+    Directory: C:\scripts\demo\My Folder
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         9/15/2026   9:31 AM             56 newfile1.txt
+-a----         9/15/2026   9:31 AM             78 newfile2.txt
+-a----         9/15/2026   9:31 AM             50 newfile3.txt
+
+
+PS C:\scripts\demo> Move-Item '.\My Folder\newfile1.txt' '.\New Folder\'
+PS C:\scripts\demo> Get-Childitem '.\New folder\'
+
+
+    Directory: C:\scripts\demo\New folder
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         9/15/2026   9:19 AM             36 myfile.txt
+-a----         9/15/2026   9:31 AM             56 newfile1.txt
+
+
+PS C:\scripts\demo> Remove-ITem '..\demo2\My Folder\' -whatif
+Confirm
+The item at C:\scripts\demo2\My Folder\ has children and the Recurse parameter was not specified. If you continue, all children will be removed with the item. Are you sure you want to continue?
+&Yes  Yes to &All  &No  No to A&ll  &Suspend
+Y
+What if: Performing the operation "Remove Directory" on target "C:\scripts\demo2\My Folder\".
+PS C:\scripts\demo> Remove-ITem '..\demo2\My Folder\'
+Confirm
+The item at C:\scripts\demo2\My Folder\ has children and the Recurse parameter was not specified. If you continue, all children will be removed with the item. Are you sure you want to continue?
+&Yes  Yes to &All  &No  No to A&ll  &Suspend
+Y
+PS C:\scripts\demo> gci ..\demo2
+PS C:\scripts\demo> Get-Alias -Definition Set-Location
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Alias           cd -> Set-Location
+Alias           chdir -> Set-Location
+Alias           sl -> Set-Location
+
+
+PS C:\scripts\demo> ls ..\demo2
+PS C:\scripts\demo> gci
+
+
+    Directory: C:\scripts\demo
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:31 AM                My Folder
+d-----         9/15/2026   9:43 AM                New Folder
+-a----         9/15/2026   9:19 AM             36 myfile.txt
+-a----         9/15/2026   9:20 AM             52 myfile2.txt
+-a----         9/15/2026   9:21 AM             50 myfile3.txt
+-a----         9/15/2026   9:29 AM            446 myscript.ps1
+-a----         9/15/2026   9:31 AM             50 newfile3_copy.txt
+
+
+PS C:\scripts\demo> Stop-Transript
+Stop-Transript : The term 'Stop-Transript' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:1
++ Stop-Transript
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Stop-Transript:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Stop-Transript : The term 'Stop-Transript' is not recognized as the name of a cmdlet, function, script file,
+or operable program. Check the spelling of the name, or if a path was included, verify that the path is
+correct and try again.
+At line:1 char:1
++ Stop-Transript
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Stop-Transript:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\scripts\demo> sl ..\demo2
+PS C:\scripts\demo2> Stop-Transript
+Stop-Transript : The term 'Stop-Transript' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:1
++ Stop-Transript
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Stop-Transript:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Stop-Transript : The term 'Stop-Transript' is not recognized as the name of a cmdlet, function, script file,
+or operable program. Check the spelling of the name, or if a path was included, verify that the path is
+correct and try again.
+At line:1 char:1
++ Stop-Transript
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Stop-Transript:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\scripts\demo2> ls
+PS C:\scripts\demo2> gci
+PS C:\scripts\demo2> Stop-Transript -Path $HOME\demo3\PSscript1.txt
+Stop-Transript : The term 'Stop-Transript' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try 
+again.
+At line:1 char:1
++ Stop-Transript -Path $HOME\demo3\PSscript1.txt
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Stop-Transript:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+Stop-Transript : The term 'Stop-Transript' is not recognized as the name of a cmdlet, function, script file,
+or operable program. Check the spelling of the name, or if a path was included, verify that the path is
+correct and try again.
+At line:1 char:1
++ Stop-Transript -Path $HOME\demo3\PSscript1.txt
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (Stop-Transript:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\scripts\demo2> cd ..
+PS C:\scripts> ls
+
+
+    Directory: C:\scripts
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         9/15/2026   9:36 AM                demo
+d-----         9/15/2026   9:55 AM                demo2
+
+
+PS C:\scripts> cd..
+PS C:\> cd users
+PS C:\users> cd admin
+PS C:\users\admin> ls
+
+
+    Directory: C:\users\admin
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---         9/11/2026   1:29 PM                Contacts
+d-----         9/15/2026   9:11 AM                demo3
+d-r---         9/11/2026   1:29 PM                Desktop
+d-r---         9/11/2026   1:29 PM                Documents
+d-r---         9/11/2026   1:29 PM                Downloads
+d-r---         9/11/2026   1:29 PM                Favorites
+d-r---         9/11/2026   1:29 PM                Links
+d-r---         9/11/2026   1:29 PM                Music
+d-r---         9/15/2026   9:06 AM                OneDrive
+d-r---         9/11/2026   1:29 PM                Pictures
+d-r---         9/11/2026   1:29 PM                Saved Games
+d-----         9/15/2026   9:16 AM                scripts
+d-r---         9/15/2026   9:04 AM                Searches
+d-r---         9/15/2026   9:04 AM                Videos
+
+
+PS C:\users\admin> cd demo3
+PS C:\users\admin\demo3> ls
+
+
+    Directory: C:\users\admin\demo3
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         9/15/2026   9:11 AM            667 PSscript1.txt
+
+
+PS C:\users\admin\demo3> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20260915100055
+**********************
