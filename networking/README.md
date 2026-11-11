@@ -8,3 +8,4 @@ Networking exercises and labs.
 - [Packet Tracer: Connect a Router to a LAN](packet-tracer-connect-router-to-lan/README.md): examining, configuring and verifying router interfaces and routing tables, with the Packet Tracer file and topology screenshot.
 - [Packet Tracer: Troubleshoot Default Gateway Issues](packet-tracer-troubleshoot-default-gateway/README.md): finding and fixing IP address, switch address and default gateway problems, with a testing and verification table.
 - [Packet Tracer: Configure Secure Passwords and SSH](packet-tracer-secure-passwords-and-ssh/README.md): securing the administrative access of a router with passwords and SSH, with the Packet Tracer file and topology screenshot.
+- [Packet Tracer: Subnet an IPv4 Network](packet-tracer-subnet-ipv4-network/README.md): subnetting 192.168.0.0/24 for two LANs and future expansion, with the addressing table and connectivity tests.
