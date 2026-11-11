@@ -24,3 +24,4 @@ Windows Server 2022, Active Directory, Group Policy and IIS exercises, including
 - [Software RAID 5 volume](raid5-volume/README.md): three dynamic disks combined into a RAID 5 volume with Disk Management.
 - [Shared folder with group-based permissions](data-share-permissions/README.md): a shared Data folder on the RAID 5 drive where the groups Ylläpito, Hallinto and Opiskelijat have different NTFS permissions.
 - [Windows Server 2022 Core and domain join](server-core-domain-join/README.md): a Server Core installation configured with sconfig, joined to the domain and tested from a Windows 11 client.
+- [File server on Windows Server Core](file-server-on-server-core/README.md): installing the File Server role on Server Core with PowerShell, sharing a folder and testing that teachers can write and students can only read.
