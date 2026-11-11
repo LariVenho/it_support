@@ -14,3 +14,4 @@ Windows Server 2022, Active Directory, Group Policy and IIS exercises, including
 - [Intranet on a Windows Server 2022 server](iis-intranet-server/README.md): installing IIS on a domain member server and publishing an intranet front page.
 - [Backup and restore](backup-and-restore/README.md): a full server backup of a domain controller to a new disk and a System State restore in Directory Services Restore Mode after SYSVOL was damaged.
 - [Blocking executable files on a file server](block-executable-files-fsrm/README.md): an active FSRM file screen that blocks .exe and .com files in a shared folder, tested from a domain workstation.
+- [Preventing application installation with Group Policy](prohibit-user-installs-gpo/README.md): the Windows Installer policy Prohibit User Installs, enabled with Hide User Installs.
