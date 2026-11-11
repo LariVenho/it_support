@@ -24,8 +24,8 @@ Installing a new Windows Server 2022 server, joining it to the existing `server0
 
 ### 1. Install the server
 
-1. Create a new virtual machine and install **Windows Server 2022**.
-2. Connect the virtual machine to the same virtual network as the domain controller and the clients.
+1. Create a new virtual machine in VMware and install **Windows Server 2022**.
+2. Connect the virtual machine to the same VMware virtual network as the domain controller and the clients.
 3. Set a static IPv4 address, for example `172.16.10.30`. Set the domain controller as the preferred DNS server, because the domain controller is the DNS server of the domain.
 
 ### 2. Join the server to the domain
