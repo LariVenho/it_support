@@ -9,3 +9,4 @@ Technical IT support projects and documentation.
 - [Clock app quick guide](clock-app-quick-guide/README.md): a one-page A4 user guide with screenshots for a phone application, as PDF and the original Word document.
 - [Lenovo ThinkPad T490 RAM upgrade](lenovo-ram-upgrade/README.md): adding an 8 GB SO-DIMM module to the free memory slot (8 GB to 16 GB), with the procedure, troubleshooting, verification and photos.
 - [PowerShell: files and folders](powershell-files-and-folders/README.md): creating, copying, moving and removing files and folders, aliases, a first script and a session transcript.
+- [Basic scripts in Windows and Linux](basic-scripts-windows-linux/README.md): the same system information script written as a Windows batch script, a PowerShell script and a Bash script.
