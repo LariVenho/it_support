@@ -11,4 +11,4 @@ Projects and documentation related to the IT support role, grouped by topic. Eac
 
 ## About the documentation
 
-I completed and tested the projects myself. I have used AI tools (Claude) to speed up and clarify the documentation.
+All projects are my own work. I have used Claude to speed up the documentation.
