@@ -1,7 +1,7 @@
 # System administration
 
-Palvelin- ja järjestelmäylläpidon harjoitukset ja dokumentaatio.
+Server and system administration exercises and documentation.
 
-## Projektit
+## Projects
 
-- [AD-käyttäjät, kotihakemistot ja yhteiset asemat](ad-users-and-shared-drives/README.md): organisaatioyksiköt, ryhmät, käyttäjät, jaetut kansiot ja kirjautumisskriptit.
+- [AD users, home folders and shared drives](ad-users-and-shared-drives/README.md): organizational units, groups, users, shared folders and logon scripts.

@@ -1,7 +1,7 @@
 # Technical support
 
-IT-tuen tekniset projektit ja dokumentaatio.
+Technical IT support projects and documentation.
 
-## Projektit
+## Projects
 
-- [PC-laitteiston päivitykset](pc-hardware-upgrades/README.md): prosessorin, virtalähteen, näytönohjaimen, muistin ja kiintolevyn vaihdot ja lisäykset kahteen koneeseen.
+- [PC hardware upgrades](pc-hardware-upgrades/README.md): CPU, PSU, GPU, memory and hard drive replacements and additions on two PCs.
