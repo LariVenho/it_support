@@ -1,6 +1,6 @@
 # Desktop wallpaper Group Policy
 
-Creating a new Group Policy Object (GPO) that sets a common desktop wallpaper for domain users in the `server01.local` domain, enabling it and testing it on a domain-joined Windows 11 client.
+Creating a new Group Policy Object (GPO) that sets a common desktop wallpaper for the domain-joined clients of the `server01.local` domain, linking it to the domain and testing it on a Windows 11 client.
 
 ## Screenshots
 
@@ -27,7 +27,7 @@ Creating a new Group Policy Object (GPO) that sets a common desktop wallpaper fo
 ### 2. Create the GPO
 
 1. Open **Server Manager > Tools > Group Policy Management**.
-2. Right-click the domain or the organizational unit whose users should get the wallpaper and select **Create a GPO in this domain, and Link it here**.
+2. Right-click the domain `server01.local` and select **Create a GPO in this domain, and Link it here**. Linking the GPO at the domain level applies it to the users who log on to the domain-joined clients.
 3. Name the GPO `Wallpaper GPO`.
 
 ### 3. Configure the wallpaper setting
@@ -48,6 +48,6 @@ On the client, run `gpupdate /force` in a command prompt and sign out and back i
 
 ### 5. Test
 
-1. Sign in to the Windows 11 client with a domain user who is in the scope of the GPO.
+1. Sign in to the Windows 11 client with a domain user (the GPO is linked to the domain, so it applies to all domain users on the clients).
 2. Check that the common wallpaper is shown on the desktop (see the last screenshot).
 3. Optionally run `gpresult /r` to confirm that `Wallpaper GPO` is listed under the applied user policies.
