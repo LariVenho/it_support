@@ -11,3 +11,4 @@ Networking exercises and labs.
 - [Packet Tracer: Subnet an IPv4 Network](packet-tracer-subnet-ipv4-network/README.md): subnetting 192.168.0.0/24 for two LANs and future expansion, with the addressing table and connectivity tests.
 - [Packet Tracer: Configure Initial Switch Settings](packet-tracer-initial-switch-settings/README.md): verifying the default switch configuration, securing console and privileged access, configuring a MOTD banner and saving the configuration.
 - [Packet Tracer: Subnetting Scenario](packet-tracer-subnetting-scenario/README.md): subnetting 192.168.100.0/24 for four LANs and a WAN link, with the addressing table and device configuration.
+- [Making an Ethernet RJ45 cable end](rj45-ethernet-cable-termination/README.md): stripping, arranging the wires in the T-568B order, crimping an RJ45 plug and testing the cable.
