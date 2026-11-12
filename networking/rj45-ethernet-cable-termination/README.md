@@ -70,8 +70,8 @@ Repeat steps 1 to 5 on the other end of the cable. Both ends must use the same T
 
 ### 7. Test the cable
 
-Plug both ends of the cable into a cable tester and check that every wire is connected through from one end to the other and that the pin order is correct. The tested cable works.
+The cable was tested with a cable tester and it works.
 
 ![Cable tester](images/06-cable-tester.jpg)
 
-*The cable tester with both ends of the cable connected. The pinout indicator lights show the tested pins (pin 5 is lit in the photo).*
+*The cable tester with the cable connected.*
