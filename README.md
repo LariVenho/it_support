@@ -4,7 +4,7 @@ Projects and documentation related to the IT support role, grouped by topic. Eac
 
 ## Topics
 
-- [Technical support](technical-support/README.md): PC and laptop hardware upgrades (including a ThinkPad RAM upgrade), remote support with TeamViewer and a user guide for a phone application.
+- [Technical support](technical-support/README.md): PC and laptop hardware upgrades (including a ThinkPad RAM upgrade), remote support with TeamViewer and user guides for a phone application and for connecting a laptop to WiFi.
 - [Windows Server](windows-server/README.md): Active Directory, Group Policy, IIS and a Windows 11 domain client.
 - [Linux](linux/README.md): Linux Mint and Zorin OS, command line utilities, a LAMP web server and Samba file sharing.
 - [Networking](networking/README.md): IPv4 subnetting, router and switch configuration and Cisco Packet Tracer labs.
