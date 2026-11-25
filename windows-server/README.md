@@ -5,6 +5,7 @@ Windows Server 2022, Active Directory, Group Policy and IIS exercises, including
 ## Projects
 
 - [AD users, home folders and shared drives](ad-users-and-shared-drives/README.md): organizational units, groups, users, shared folders and logon scripts.
+- [Creating users in bulk with PowerShell](bulk-user-creation-powershell/README.md): 123 users created from a CSV file with a PowerShell script, with home folders and a logon script set for all of them at once.
 - [Windows 11 workstation and domain join](windows-11-domain-join/README.md): installing a Windows 11 client, joining it to the domain and testing the mapped drives.
 - [Domain password and account lockout policy](password-and-lockout-policy/README.md): password history, age, length and complexity, and account lockout settings in the Default Domain Policy.
 - [Desktop wallpaper Group Policy](desktop-wallpaper-gpo/README.md): a GPO that sets a common wallpaper from a network share, tested on a domain client.
