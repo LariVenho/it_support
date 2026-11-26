@@ -96,6 +96,8 @@ The installation location screen shows both the laptop's internal drive (disk 0)
 
 ![Partitions](images/02-windows11-installer-partitions.jpg)
 
+Ubuntu was already installed on the internal drive, and Windows could not be installed while its partitions were in the way (the setup warned that Windows 11 cannot be installed on the selected partition). To make room, the partitions where Ubuntu was installed had to be deleted in the installer (**Delete partition**), after which the unallocated space was selected as the installation target and Windows 11 installed there. This permanently removed the Ubuntu installation from the drive.
+
 Result: Windows 11 installed and running.
 
 ![Windows 11 desktop](images/01-windows11-desktop.jpg)
@@ -121,5 +123,6 @@ The first boot from the Ventoy drive stopped with this error.
 - Rufus is the simplest choice for a single ISO. Ventoy is better when one drive should hold several ISO images or files larger than 4 GB, because its data partition is not limited by FAT32.
 - FAT32 limits single files to 4 GB. Rufus works around this for the Ubuntu ISO, which is why the file system can stay FAT32.
 - Secure Boot can block third-party boot loaders such as Ventoy. The error `0x1A Security Violation` is the typical sign, and enrolling the key solves it without turning Secure Boot off.
+- An existing Ubuntu installation has to be removed (its partitions deleted) before Windows can be installed on the same drive. Deleting partitions destroys the data on them, so back up anything needed first.
 - Always check which drive the installer targets, because the USB drive appears in the same list as the internal drive.
 - Back up the USB drive first. Both tools wipe it.
