@@ -10,4 +10,5 @@ Technical IT support projects and documentation.
 - [Lenovo ThinkPad T490 RAM upgrade](lenovo-ram-upgrade/README.md): adding an 8 GB SO-DIMM module to the free memory slot (8 GB to 16 GB), with the procedure, troubleshooting, verification and photos.
 - [PowerShell: files and folders](powershell-files-and-folders/README.md): creating, copying, moving and removing files and folders, aliases, a first script and a session transcript.
 - [Basic scripts in Windows and Linux](basic-scripts-windows-linux/README.md): the same system information script written as a Windows batch script, a PowerShell script and a Bash script.
+- [Bootable USB media with Rufus and Ventoy](bootable-usb-rufus-ventoy/README.md): an Ubuntu USB drive made with Rufus on Windows and a Windows 11 USB drive made with Ventoy on Ubuntu, with the Secure Boot error and its solution.
 - [Connecting a laptop to a WiFi network](connect-laptop-to-wifi/README.md): a one-page A4 guide with screenshots for connecting a Windows 11 laptop to WiFi and checking the automatic IP and DNS settings, as PDF and the original Word document.
